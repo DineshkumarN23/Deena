@@ -1,0 +1,66 @@
+html{background-color: rgb(238, 240, 240);}
+.main{background-color: rgb(238, 240, 240);}  
+.logo{width: 160px;}
+.text{font-size: 19px;
+       margin-top: 65px; 
+}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+  
+
+    
+} 
+.sidenav a, .dropdown-btn {
+    padding:15px 20px 15px 20px;           
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(82, 169, 204);
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    
+  }
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: rgb(0, 255, 55)
+  }
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+.main {
+    margin-left: 250px;
+  } 
+nav{margin: 0 -15px;
+    min-height: 70px;
+    background-color: #195dbb; 
+    font-size: 17px;
+}
+.container{border: 2px solid #00000017;
+    text-align: right;
+    min-height: 140px;
+    box-shadow: -1px 0px 5px 3px rgb(219, 223, 223) ;
+    
+    
+}
+p{font-size: 18px;
+    color: grey;
+   
+  }
+#xxx{float: left;
+    margin-top: -45px;
+    border-radius:45px;
+    height:85px;
+    width:85px;
+    font-size:35px;
+}
+hr{margin: -17px;}

@@ -1,0 +1,24 @@
+ creAte table marks(id int primary key,
+ m1 int,
+ m2 int,
+ m3 int);
+ describe marks;
+ insert into marks values(1,65,85,90),(2,95,35,70),(3,55,55,90),(4,95,95,90),(5,25,55,60),(6,75,85,70),(7,75,65,90);
+select*from marks;
+select skills.id,skills.name,round(m1+m2+m3) as Total from skills inner join marks on marks.id=skills.id;
+select skills.id,skills.name,round(m1+m2+m3) as Total from skills inner join marks on marks.id=skills.id having total>200;
+select skills.id,skills.name,round(m1+m2+m3) as Total,case when m1>=35 and  m2>=35 and  m3>=35 then 'pass'
+ 
+else 'fail'
+
+end as Result,
+case when (m1+m2+m3)>250 then 'A' when (m1+m2+m3)>=200 and (m1+m2+m3)<250 then 'A'
+ else 'B'
+ end as grade
+ from skills inner join marks on marks.id=skills.id;
+ select * from skills left join marks on marks.id=skills.id;
+ select * from marks right join skills on marks.id=skills.id;
+select * from skills where name in(select name from skills having count(name)>1) ;
+select*from skills;
+ select * from skills where dept in(select dept from skills where dept in('mech','cs') ) ;
+ select name,(select marks.m1 from marks where marks.id=skills.id) as math from skills;

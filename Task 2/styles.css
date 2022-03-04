@@ -1,0 +1,58 @@
+body{background-color: rgb(238, 240, 240);}
+nav{margin: 0 -15px;
+    min-height: 7 0px;
+    background-color: #1d5bb7; 
+}
+.container{border: 2px solid #00000017;
+    text-align: right;
+    min-height: 140px;
+    margin-bottom:3px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background-color:white;
+    
+  }
+  .logo{width: 160px;}
+  .text{font-size: 19px;
+       margin-top: 65px; 
+}
+  
+  .sidenav a, .dropdown-btn {
+    padding:15px 20px 15px 20px;           
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(82, 169, 204);
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    
+  }
+  
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #080808;
+    
+  }
+  .main {
+    margin-left: 250px;
+  } 
+ 
+  .dropdown-container {
+    display: none;
+  
+  }
+  p{font-size: 18px;
+    color: grey;
+  }
+  
+  
+  
+ 
